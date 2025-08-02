@@ -1,0 +1,101 @@
+.card{
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border: 0px;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
+}
+
+.profile-image{
+    width:40%;
+    padding: 15px;
+    margin: 0px;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    object-fit: contain;
+}
+
+.profile-info{
+    width: 60%;
+    padding: 10px;
+    font-family: "Slabo 13px", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pro {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    padding: 0px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instagram, .github{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+
+.social-link{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: "Slabo 13px", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .profile-image, .profile-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pro {
+    right: 20px;
+    top: 10px;
+  }
+}
