@@ -9,6 +9,16 @@
     position: relative;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full screen height */
+  margin: 0;
+  background-color: #e0f7fa; /* better than harsh cyan */
+  font-family: 'Poppins', sans-serif;
+}
+
 .card:hover{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     border: 0px;
